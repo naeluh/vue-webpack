@@ -1,6 +1,6 @@
 # Dev to Deploy | Vue 
 
-> Boiler Plate Vue - Webpack 
+> Boilerplate Vue
 
 ## Build Setup
 
