@@ -16,7 +16,7 @@ export default new Router({
     component: HelloWorld
   },
   {
-    path: '/vue/:id',
+    path: '/:id',
     name: 'Index',
     component: Index
   }
