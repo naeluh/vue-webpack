@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "Vue 2 Boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue 2 - webpack dev | test | build | deploy",
   "author": "Nick Hulea <nhulea@getty.edu>",
   "private": true,
   "scripts": {
