@@ -10,6 +10,9 @@ module.exports = {
       : config.dev.cssSourceMap,
     extract: isProduction
   }),
+  scss: 'vue-style-loader!css-loader!sass-loader', // <style lang="scss">
+  sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax&data=@import "../src/scss/style.scss"', // <style lang="sass">
+  postcss: [require('postcss-cssnext')()],
   transformToRequire: {
     video: 'src',
     source: 'src',

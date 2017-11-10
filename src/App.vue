@@ -21,3 +21,11 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<style lang="scss">
+#app {
+  div {
+    color:green;
+  }
+}
+</style>
