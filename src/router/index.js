@@ -9,13 +9,14 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  base: '/vue/',
   routes: [{
     path: '/',
     name: 'Hello',
     component: HelloWorld
   },
   {
-    path: '/:id',
+    path: '/vue/:id',
     name: 'Index',
     component: Index
   }
