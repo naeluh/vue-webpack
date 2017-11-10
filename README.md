@@ -1,6 +1,6 @@
-# hulea.org
+# Dev to Deploy | Vue 
 
-> Main Site build for hulea.org
+> Boiler Plate Vue - Webpack 
 
 ## Build Setup
 
