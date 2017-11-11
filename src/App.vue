@@ -22,10 +22,4 @@ export default {
 }
 </style>
 
-<style lang="scss">
-#app {
-  div {
-    color:green;
-  }
-}
-</style>
+<style lang="scss"></style>

@@ -11,7 +11,7 @@ module.exports = {
     extract: isProduction
   }),
   scss: 'vue-style-loader!css-loader!sass-loader', // <style lang="scss">
-  sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax&data=@import "../src/scss/style.scss"', // <style lang="sass">
+  sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax', // <style lang="sass">
   postcss: [require('postcss-cssnext')()],
   transformToRequire: {
     video: 'src',
