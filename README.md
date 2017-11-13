@@ -20,6 +20,9 @@ npm run build --report
 # deploy for production
 npm run deploy
 
+# start for forever server
+npm run prod
+
 # run unit tests
 npm run unit
 
@@ -29,5 +32,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
