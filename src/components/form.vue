@@ -13,7 +13,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'Index',
+  name: 'Form',
   data () {
     return {
       arr: []
@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     get (params) {
-      console.log(this.$route)
+      //console.log(this.$route)
       const uri = this.$route.params.id
       return axios.get(`https://nhm.org/nature/map/map/searchobservations?params[project_id]=` + uri)
       .then((res) => {
@@ -35,12 +35,11 @@ export default {
 }
 </script>
 
+
+
 <style lang="scss" scoped>
-.hello {
-  div {
-    color:red;
-  }
-}
+
+
 </style>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

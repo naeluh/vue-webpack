@@ -22,4 +22,10 @@ export default {
 }
 </style>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./assets/scss/main";
+
+
+* {color: $black;}
+
+</style>
