@@ -1,11 +1,12 @@
 <template>
 <header id="header" class="header" role="banner">
-  <nav class="container">
+  <nav>
     <div class="logo">
       <a href="#"><img src="../assets/getty_logo_og.png"></a>
     </div>
     <div class="nav">
       <ul>
+        <li><a href="#">LINK</a></li>
         <li><a href="#">LINK</a></li>
         <li><a href="#">LINK</a></li>
         <li><a href="#">LINK</a></li>
@@ -25,31 +26,27 @@ export default {
 <style lang="scss" scoped>
 
 @import "../assets/scss/main";
+$nav: (columns: 12,gutter: 0);
+
 nav {
 	@include grid-container;
-
+    position:relative;
 	margin-bottom:2rem;
+	height:80px;
 
 	.logo {
-      @include grid-column(6);
-		float: left;
-	    width: 225px;
-	    height: 70px;
+      @include grid-column(3);
 	    background: url(../assets/getty_logo_og.png);
 	    background-image: url(../assets/getty_logo_og.png),none;
 	    background-repeat: no-repeat;
 	    background-position: left center;
 	    background-size: 100% auto;
-	    position: relative;
+	    position: absolute;
 	    display: block;
-	    float: left;
+	    top: 0;
+	    left: 0;
 	    width: 80px;
 	    height: 80px;
-	    background: url(../assets/getty_logo_og.png);
-	    background-image: url(../assets/getty_logo_og.png),none;
-	    background-repeat: no-repeat;
-	    background-position: left center;
-	    background-size: 100% auto;
 	    line-height: 1;
 	    overflow: hidden;
 	    text-indent: 9999px;
@@ -58,7 +55,8 @@ nav {
 	}
 
 	.nav {
-		@include grid-column(6);
+		@include grid-column(9);
+
 		float: right;
 		ul {
 		  height: 80px;
@@ -68,7 +66,7 @@ nav {
 		  @include grid-container;
 		  li {
 			    cursor: pointer;
-			    @include grid-column(4);
+			   @include grid-column(3, $nav);
 		    a {
 		    	text-align:center;
 			    padding: 28px 0;
@@ -83,6 +81,4 @@ nav {
 		}
 	}
 }
-
-
 </style>
