@@ -11,6 +11,7 @@ Vue.component('Footer', Footer)
 Vue.config.productionTip = true
 
 require('./assets/scss/main.scss')
+require('../node_modules/normalize.css/normalize.css')
 
 /* eslint-disable no-new */
 new Vue({

@@ -74,6 +74,7 @@
     "node-neat": "^2.0.0-beta.0",
     "node-sass": "^4.6.0",
     "normalize-scss": "^7.0.0",
+    "normalize.css": "^7.0.0",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",

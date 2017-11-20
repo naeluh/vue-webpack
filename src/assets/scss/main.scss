@@ -1,11 +1,15 @@
-@import "../../../node_modules/normalize-scss/sass/normalize";
 @import "bourbon";
 @import "neat";
 
-ul {
-  @include grid-container;
-  li {
-  	 @include grid-column(1);
-  }
+
+* {
+	font-family: 'Avenir', Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
 }
 
+.container {
+	margin-right: auto;
+    margin-left: auto;
+    max-width: 88rem;
+    position: relative;
+}
