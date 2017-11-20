@@ -96,9 +96,9 @@ devMiddleware.waitUntilValid(() => {
     console.log('> Listening at ' + uri + '\n')
     // when env is testing, don't need open it
     if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-      opn(uri, {app: ['chrome']});
+      //opn(uri, {app: ['chrome']});
       //Use this for default system browser
-      //opn(uri)
+      opn(uri)
     }
     server = app.listen(port)
     _resolve()
