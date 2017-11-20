@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Nav/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
@@ -24,8 +25,4 @@ export default {
 
 <style lang="scss">
 @import "./assets/scss/main";
-
-
-* {color: $black;}
-
 </style>

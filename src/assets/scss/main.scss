@@ -1,7 +1,11 @@
-$black: #000;
+@import "../../../node_modules/normalize-scss/sass/normalize";
+@import "bourbon";
+@import "neat";
 
-#app {
-    * {
-        color: $black;
-    }
+ul {
+  @include grid-container;
+  li {
+  	 @include grid-column(1);
+  }
 }
+

@@ -3,8 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Footer from './components/Footer'
+import Nav from './components/Nav'
+Vue.component('Nav', Nav)
+Vue.component('Footer', Footer)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 require('./assets/scss/main.scss')
 

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import { AsyncDataPlugin } from 'vue-async-data-2'
-import HelloWorld from '@/components/HelloWorld'
 import Index from '@/components/Index'
 
 Vue.use(AsyncDataPlugin)
@@ -12,8 +11,8 @@ export default new Router({
   base: '/vue/',
   routes: [{
     path: '/',
-    name: 'Hello',
-    component: HelloWorld
+    name: 'Index',
+    component: Index
   },
   {
     path: '/:id',
