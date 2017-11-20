@@ -28,7 +28,11 @@ const compiler = webpack(webpackConfig)
 
 const devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
-  quiet: true
+  quiet: true,
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  }
 })
 
 const hotMiddleware = require('webpack-hot-middleware')(compiler, {
@@ -92,7 +96,9 @@ devMiddleware.waitUntilValid(() => {
     console.log('> Listening at ' + uri + '\n')
     // when env is testing, don't need open it
     if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-      opn(uri)
+      opn(uri, {app: ['chrome']});
+      //Use this for default system browser
+      //opn(uri)
     }
     server = app.listen(port)
     _resolve()
