@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+/* import axios from 'axios' */
 
 export default {
   name: 'Index',
@@ -42,6 +42,7 @@ export default {
     }
   },
   methods: {
+    /*
     get (params) {
       console.log(this.$route)
       const uri = this.$route.params.id
@@ -50,9 +51,10 @@ export default {
         this.arr = res.data
       })
     }
+    */
   },
   created () {
-    this.get()
+    /* this.get() */
   }
 }
 </script>
