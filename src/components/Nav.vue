@@ -6,10 +6,10 @@
     </div>
     <div class="nav">
       <ul>
-        <li><a href="#">LINK</a></li>
-        <li><a href="#">LINK</a></li>
-        <li><a href="#">LINK</a></li>
-        <li><a href="#">LINK</a></li>
+        <li><a href="#">{{msg}}</a></li>
+        <li><a href="#">{{msg}}</a></li>
+        <li><a href="#">{{msg}}</a></li>
+        <li><a href="#">{{msg}}</a></li>
       </ul>
   	</div>
   </nav>
@@ -19,7 +19,11 @@
 <script>
 export default {
   name: 'Nav',
-  data () {}
+  data () {
+    return {
+      msg: 'LINK'
+    }
+  }
 }
 </script>
 
