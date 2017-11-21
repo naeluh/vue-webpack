@@ -31,7 +31,7 @@ $nav: (columns: 12,gutter: 0);
 nav {
 	@include grid-container;
     position:relative;
-	margin-bottom:2rem;
+	margin-bottom:4rem;
 	height:80px;
 
 	.logo {

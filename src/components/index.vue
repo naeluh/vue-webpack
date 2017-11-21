@@ -60,22 +60,43 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/main";
 
-$article: (columns: 4,gutter: 2rem);
+$article: (
+  columns: 12,
+  gutter: 2rem
+);
 
+$article-phone: (
+  columns: 12,
+  gutter: 2rem,
+  media: "(max-width: 768px)",
+);
 
 #main {
+
     header {
       padding-left:2rem;
     }
+
     article {
       @include grid-container;
     }
+
     section {
-      @include grid-column(3, $article);
+      @include grid-column(8, $article);
+
+      @include grid-media($article-phone) {
+          @include grid-column(12, $article);
+      }
     }
+
     aside {
-      @include grid-column(1, $article);
+      @include grid-column(4, $article);
+      
+      @include grid-media($article-phone) {
+          @include grid-column(12, $article);
+      }
     }
+
 }
 
 

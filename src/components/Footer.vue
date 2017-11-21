@@ -24,7 +24,7 @@ footer {
   background:#000;
   margin-top: 100px;
   div {
-    padding:2rem;
+    padding:5rem 2rem;
   }
 }
 </style>
