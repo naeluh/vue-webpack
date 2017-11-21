@@ -1,7 +1,3 @@
-# Dev to Deploy | Vue 
-
-> Boilerplate Vue
-
 ## Build Setup
 
 ``` bash
