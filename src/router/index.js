@@ -8,7 +8,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: '/vue/',
+  base: '/',
   routes: [{
     path: '/',
     name: 'Index',
@@ -16,7 +16,7 @@ export default new Router({
   },
   {
     path: '/:id',
-    name: 'Index',
+    name: 'PAGE',
     component: Index
   }
   ]
